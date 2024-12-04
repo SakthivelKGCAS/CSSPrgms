@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="box-default">Default (content-box)</div>
+    <div class="box-border">With border-box</div>
+    
+    <style>
+      div {
+          margin: 10px;
+          padding: 20px;
+          border: 5px solid black;
+          background: lightblue;
+          width: 200px;
+      }
+    
+      .box-default {
+          box-sizing: content-box; /* Default behavior */
+      }
+    
+      .box-border {
+          box-sizing: border-box; /* Includes padding and border */
+      }
+    </style>
+    
+</body>
+</html>

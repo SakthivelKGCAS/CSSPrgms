@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: darkred;
+    font-family: Verdana;
+}
+p {
+    color: darkgreen;
+    font-size: 20px;
+}
