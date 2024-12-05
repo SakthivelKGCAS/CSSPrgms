@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .container {
+      width: 300px;
+      height: 300px;
+      position: relative;
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 1; /* Box 1 will be below Box 2 */
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      z-index: 2; /* Box 2 will be above Box 1 */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+
+</body>
+</html>

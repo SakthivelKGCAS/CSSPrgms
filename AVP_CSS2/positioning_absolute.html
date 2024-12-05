@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Container with relative positioning */
+    .container {
+      width: 300px;
+      height: 300px;
+      background-color: lightgray;
+      position: relative;  /* Set this to relative so the child can position absolutely */
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    /* Box with absolute positioning */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      position: absolute; /* Position absolute */
+      top: 50px;  /* 50px from the top of the container */
+      left: 50px; /* 50px from the left of the container */
+    }
+
+    /* Another box without positioning */
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: #FF5733;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Box with absolute positioning inside the container -->
+    <div class="box">Box 1</div>
+    <!-- Box with normal flow inside the container -->
+    <div class="box2">Box 2</div>
+  </div>
+
+</body>
+</html>

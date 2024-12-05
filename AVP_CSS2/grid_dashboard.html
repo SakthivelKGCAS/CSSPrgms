@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Main Dashboard Grid */
+    .dashboard {
+      display: grid;
+      grid-template-columns: 200px 1fr; /* Sidebar (fixed width) and main content (flexible) */
+      grid-template-rows: 50px 1fr; /* Header (fixed height) and content (flexible) */
+      grid-template-areas: 
+        "header header" 
+        "sidebar content";
+      height: 100vh; /* Full viewport height */
+      gap: 20px;
+    }
+
+    /* Header Section */
+    .header {
+      grid-area: header;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+    }
+
+    /* Sidebar Section */
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-right: 2px solid #ccc;
+    }
+
+    /* Content Section */
+    .content {
+      grid-area: content;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    /* Links inside sidebar */
+    .sidebar a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="header">
+      Dashboard
+    </div>
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <a href="#">Dashboard</a>
+      <a href="#">Settings</a>
+      <a href="#">Profile</a>
+      <a href="#">Messages</a>
+    </div>
+    <div class="content">
+      <h2>Main Content Area</h2>
+      <p>Welcome to the main dashboard content area. You can display various information here, such as user data, reports, or any other content related to the dashboard.</p>
+    </div>
+  </div>
+
+</body>
+</html>

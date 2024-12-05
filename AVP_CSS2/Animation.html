@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Keyframes Animation</title>
+  <style>
+    /* Define the keyframes for move and change color */
+    @keyframes moveAndChangeColor {
+      0% {
+        background-color: red; /* Initial color */
+        transform: translateX(0); /* Initial position */
+      }
+      50% {
+        background-color: yellow; /* Middle color */
+        transform: translateX(200px); /* Move 200px to the right */
+      }
+      100% {
+        background-color: green; /* Final color */
+        transform: translateX(0); /* Move back to the initial position */
+      }
+    }
+
+    /* Styling the box that will be animated */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 50px auto; /* Center the box */
+      animation-name: moveAndChangeColor;
+      animation-duration: 4s; /* Animation will last 4 seconds */
+      animation-timing-function: ease-in-out; /* Smooth transition */
+      animation-iteration-count: infinite; /* Repeat infinitely */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The element that will be animated -->
+  <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation on Hover</title>
+  <style>
+    /* Keyframe animation to grow and fade the image */
+    @keyframes zoomIn {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+    }
+
+    /* Initial styling of the image */
+    .image {
+      width: 300px;
+      height: 300px;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hover effect to trigger animation */
+    .image:hover {
+      animation-name: zoomIn;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite; /* Loop the animation */
+    }
+  </style>
+</head>
+<body>
+
+  <img src="bull.jpg" alt="Example Image" class="image">
+
+</body>
+</html>
